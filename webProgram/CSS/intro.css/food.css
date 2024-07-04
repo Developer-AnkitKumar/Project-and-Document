@@ -1,0 +1,247 @@
+body {
+    background-color: rgb(18, 14, 15);
+    padding: 0%;
+    margin: auto;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    font-family: cursive;
+    margin: 0px;
+}
+
+[id=tag] {
+    width: 100%;
+    height: 20px;
+    color: rgb(192, 37, 37);
+    text-align: center;
+    line-height: 60px;
+}
+
+[id=tag1] {
+    width: 100%;
+    height: 30px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 2dvi;
+    margin: 0px;
+}
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(162, 156, 156);
+    border-radius: 0px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    display: block;
+}
+
+#img navbar {
+    text-align: center;
+    display: block;
+    color: black;
+    block-size: 0%;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+#navcontent {
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+}
+
+ul li {
+    border-radius: 10px;
+    margin: 5px;
+    list-style: none;
+}
+
+ul li a {
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+ul li a:hover {
+    background-color: rgb(214, 7, 163);
+    border-radius: 10px;
+}
+
+#container1 {
+    width: 100%;
+    height: 20px;
+    color: blue;
+    text-align: center;
+}
+
+#container1::before {
+    content: ' ';
+    display: flex;
+    background: url("./1.jpg")no-repeat center;
+    width: 100vw;
+    height: 59vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-family: 'Ubuntu Mono',monospace;
+    margin-right: 45px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.89;
+    border-bottom-left-radius: 100px;  
+}
+
+#container1 img{
+    display: block;
+    color: black;
+    background-image: -moz-radial-gradient(rgb(164, 156, 156));
+    block-size: 0%;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    padding: 0%;
+    margin-bottom: 3px;
+}
+
+#row1{
+    /* background-color: rgb(162, 156, 156); */
+    text-align: center;
+    line-height: normal;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.btn {
+    text-align: center;
+    line-height: normal;
+    margin-top: 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono'monospace;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+#row2{
+    width: 24vw;
+    height: 21vh;
+    box-shadow: 2px 7px 16px 19px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 38px;
+    border-radius: 40px;
+}
+#row2 ::before{
+    content: ' ';
+    background: url('2.jpeg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24vw;
+    height: 21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+#row3{
+    width: 24vw;
+    height: 21vh;
+    box-shadow: 2px 7px 16px 19px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 38px;
+    border-radius: 40px;
+}
+#row3 ::before{
+    content: ' ';
+    background: url('2.jpeg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24vw;
+    height: 21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+#top3{
+    text-align: center;
+    color: red;
+    font-family: 'Ubuntu Mono'monospace;
+}
+
+#container4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}
+
+#row4{
+    width: 29vw;
+    height: 360vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(120, 134, 148);
+    background: url('a1.jpeg')no-repeat center center/cover;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+#row5{
+    width: 29vw;
+    height: 360vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(120, 134, 148);
+    background: url('a2.jpeg')no-repeat center center/cover;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+#row6{
+    width: 29vw;
+    height: 360vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(120, 134, 148);
+    background: url('a3.jpeg')no-repeat center center/cover;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+footer{
+    text-align: center;
+    color: bisque;
+}
+

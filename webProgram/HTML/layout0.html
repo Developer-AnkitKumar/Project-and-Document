@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style type = "text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #main-div1
+        {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            margin-bottom:2px;
+        }
+        #main-div1 .sqr
+        {
+            width: 33%;
+            height: 200px;
+            background-color: lightblue;
+            float: left;
+        }
+        #main-div1 .sqr:nth-child(2)
+       {
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+       }
+        #logo-div
+        {
+            width: 100%;
+            height: 200px;
+            background-color: lightyellow;
+            text-align: center;
+            line-height: 50px;
+            margin-bottom:2px ;
+        }
+        #div2
+        {
+            width: 100%;
+            height: 200px;
+            background-color: lightgray;
+            text-align: left;                                                                
+            line-height: 50px;
+            margin-bottom: 2px;
+        }
+       #main-div
+       {
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+        margin: 0 auto;
+       }
+       #main-div .box
+       {
+        width: 33%;
+        height: 200px;
+        background-color: lightpink;
+        float: left;
+       }
+       
+       .classfix::after
+       {
+             content: " ";
+             display: block;
+             clear: both;
+       }
+       #main-div .box:nth-child(2)
+       {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div id="main-div1" class="clearfix">
+        <div class="sqr">
+            Sqr1
+        </div>
+        <div class="sqr">
+            Sqr2
+        </div>
+        <div class="sqr">
+            Sqr3
+        </div>
+    </div>
+    <div id="logo-div">
+        Logo
+    </div>
+    <div id="div2">
+        Div2
+    </div>
+    <div id="main-div" class="clearfix">
+        <div class="box">
+            Box1
+        </div>
+        <div class="box">
+            Box2
+        </div>
+        <div class="box">
+            Box3
+        </div>
+    </div>
+</body>
+</html>

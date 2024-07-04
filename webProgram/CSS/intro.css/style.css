@@ -1,0 +1,31 @@
+body{
+    background-color: #8ad8fa;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    width: 302px;
+    height: 470px;
+    position: fixed;
+    margin: auto;
+    inset: 0;
+    box-shadow:  0px 4px 20px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgb(250, 251, 253);
+    border-radius: 16px;
+}
+img{
+    width: 100%;
+    text-align: bottom;
+    border-radius: 12px;
+    border: 1px solid #0d2bd8;
+}
+
+h3{
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+}

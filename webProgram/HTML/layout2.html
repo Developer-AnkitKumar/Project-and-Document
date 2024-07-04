@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lyout2</title>
+    
+    <style type="text/css">
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #header-div
+        {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(103, 118, 236);
+            text-align: center;
+            border: 2px solid rgb(255, 39, 39);
+            line-height: 50px;
+            margin-bottom: 0%;
+
+        }
+        #path-Div
+        {
+            width: 100%;
+            height: 70px;
+            background-color: rgb(255, 149, 241);
+            line-height: 40px;
+            border: 2px solid rgb(60, 25, 255);
+            text-align: center;
+            margin-bottom: 0%;
+        }
+        #docktop-div
+        {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(234, 245, 134);
+            border: 2px solid rgb(12, 12, 10);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 0%;
+        }
+        #main-div
+       {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 0%;
+       }
+       #main-div .box
+       {
+        width: 30%;
+        height: 400px;
+        background-color: rgb(247, 172, 172);
+        float: left;
+        text-align: center;
+        line-height: 300px;
+       }
+       #main-div .box1
+       {
+        width: 30%;
+        height: 400px;
+        background-color: rgb(156, 249, 135);
+        float: left;
+        text-align: center;
+        line-height: 300px;
+       }
+       #main-div .box-div
+       {
+        width: 39%;
+        height: 400px;
+        background-color: lightgray;
+        float: left;
+        text-align: center;
+        line-height: 400px;
+       }
+       
+       .classfix::after
+       {
+             content: " ";
+             display: block;
+             clear: both;
+       }
+       #main-div .box-div:nth-child(2)
+       {
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+       }
+       #dockbottom-div
+       {
+        width: 100%;
+        height: 60px;
+        background-color: rgb(148, 165, 250);
+        line-height: 50px;
+        text-align: center;
+        border: 2px solid rgb(255, 25, 255);
+        margin: 0%;
+       }
+       #footer-div
+       {
+        width: 100%;
+        height: 60px;
+        background-color: rgb(246, 233, 47);
+        line-height: 50px;
+        text-align: center;
+        border: 2px solid rgb(17, 16, 14);
+       }
+        
+    </style>
+</head>
+<body>
+    <div id="header-div">
+          <b>Header</b>
+    </div>
+    <div id="path-Div">
+        <b>path</b>
+    </div>
+    <div id="docktop-div">
+        <b>Docktop</b>
+    </div>
+    <div id="main-div" class="clearfix">
+        <div class="box">
+             <b>DOCKLEFT</b>
+        </div>
+        <div class="box-div">
+        <b>CONTENT</b>
+        </div>
+        <div class="box1">
+            <b>DOCKRIGHT</b> Hidden by default
+        </div>
+    </div>
+    <div id="dockbottom-div">
+        <b>DOCKBOTTOM</b>  <s>Hidden by default</s>
+    </div>
+    <div id="footer-div">
+        <b>FOOTER</b>
+    </div>
+</body>
+</html>

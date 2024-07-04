@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Scraper</title>
+    <script>
+        async function scrapeProduct() {
+            const url = document.getElementById('url').value;
+            const site = document.getElementById('site').value;
+
+            const response = await fetch('http://127.0.0.1:5000/scrape', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url, site })
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                document.getElementById('result').innerHTML = `
+                    <h2>${data.title}</h2>
+                    <p>Price: ${data.price}</p>
+                    <p>Description: ${data.description}</p>
+                    <img src="${data.image_url}" alt="${data.title}" style="width: 200px; height: auto;">
+                `;
+            } else {
+                document.getElementById('result').innerText = data.error || 'An error occurred';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>E-commerce Product Scraper</h1>
+    <form onsubmit="event.preventDefault(); scrapeProduct();">
+        <label for="url">Product URL:</label>
+        <input type="text" id="url" name="url" required>
+        <br>
+        <label for="site">Site:</label>
+        <select id="site" name="site" required>
+            <option value="">Select Site</option>
+            <option value="amazon">Amazon</option>
+            <option value="flipkart">Flipkart</option>
+            <option value="myntra">Myntra</option>
+        </select>
+        <br>
+        <button type="submit">Scrape Product</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
