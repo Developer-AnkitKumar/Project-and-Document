@@ -1,2 +1,2 @@
 # Project Title
-This repo is personal project in which is based on the inernship and all the documents persented.
+This repo is personal project in which is based on the documents persented.
