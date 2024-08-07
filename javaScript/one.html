@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: rgb(17, 84, 142);
+        }
+        *{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body style="background-color:#acaaaa; color: rgb(12, 145, 26);">
+    <div class="bg-black">
+        <h1 id="title" class="heading">Ankit kumar pal code on JavaScript</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat a exercitationem ab quod consequuntur ex
+            recusandae. Nobis maiores quibusdam ipsam et. Obcaecati dolorem voluptatem accusamus. Nesciunt sed inventore
+            asperiores odio!</p>
+    </div>
+        <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thusday</div>
+            <div class="day">Friday</div>
+            <div class="day">Saturday</div>
+            <div class="day">Sunday</div>
+        </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children)
+    // console.log(parent.children[1].innerHTML)
+
+    for(let i = 0;  i<parent.children.length; i++){
+        console.log(parent.children[i].innerHTML)
+    }
+</script>
+
+</html>
